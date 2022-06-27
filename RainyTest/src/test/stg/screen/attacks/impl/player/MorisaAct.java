@@ -64,4 +64,10 @@ public class MorisaAct extends PlayerAction {
 
     }
 
+    public boolean canBomb() {
+
+        return timerBomb <= 0;
+
+    }
+
 }

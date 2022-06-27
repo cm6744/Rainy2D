@@ -252,7 +252,7 @@ public class Dialog extends Tickable {
 
         if(textBarFullOpen && hasTextNext()) {
             Draw.font(TextFont.MICROSOFT);
-            Draw.color(Color4f.LIGHT);
+            Draw.color(Color4f.WHITE);
             Draw.renderStringCenter(textBar.getX(), textBar.getY(), texts.get(textIndex));
         }
 

@@ -28,8 +28,8 @@ public class TexSystem {
         //check the field isn't out of raster
         if(x < 0) x = 0;
         if(y < 0) y = 0;
-        if(width < 0) width = 0;
-        if(height < 0) height = 0;
+        if(width <= 0) width = 1;
+        if(height <= 0) height = 1;
 
         if(x + width >= texture.getWidth()) {
             width = texture.getWidth() - x;

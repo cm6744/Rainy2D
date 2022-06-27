@@ -23,6 +23,6 @@ public class Keys {
     public static int WAVE = KeyEvent.VK_BACK_QUOTE;
 
     public static int M_LEFT = MouseEvent.BUTTON1;
-    public static int M_RIGHT = MouseEvent.BUTTON2;
+    public static int M_RIGHT = MouseEvent.BUTTON3;
 
 }

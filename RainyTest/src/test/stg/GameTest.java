@@ -9,7 +9,6 @@ import rutil.text.Data;
 import rwt.device.render.DisplayDevice;
 import rwt.device.texture.Texture;
 import rwt.resource.Reader;
-import test.func.CanvasFunc;
 import test.stg.screen.InGameCanvas;
 import test.stg.screen.MenuCanvas;
 
@@ -54,7 +53,7 @@ public class GameTest {
         mc = new MenuCanvas(screen);
         igc = new InGameCanvas(screen);
         screen.loadFromCanvas(mc);
-        screen.loadFromCanvas(new CanvasFunc(screen));
+        //screen.loadFromCanvas(new CanvasFunc(screen));
         screen.setDefaultFps(p.intKey("fps"));
 
     }

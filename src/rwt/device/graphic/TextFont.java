@@ -5,6 +5,8 @@ import java.awt.*;
 public class TextFont {
 
     public static TextFont MICROSOFT = new TextFont("微软雅黑", 16);
+    public static TextFont SONG_TYPEFACE = new TextFont("宋体", 16);
+    public static TextFont STANDARD = new TextFont("楷体", 16);
 
     /////////*********////////
 

@@ -24,4 +24,10 @@ public class PlayerAction extends Tickable {
 
     public void callBomb() {}
 
+    public boolean canBomb() {
+
+        return true;
+
+    }
+
 }

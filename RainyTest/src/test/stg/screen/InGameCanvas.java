@@ -17,8 +17,8 @@ import r2dx.stg.replay.ReplayCamera;
 import rutil.maths.Maths;
 import rutil.maths.ToolMath;
 import rutil.shape.Circle;
-import rwt.device.sound.SoundDevice;
 import rwt.device.graphic.Draw;
+import rwt.device.sound.SoundDevice;
 import rwt.device.texture.TexSystem;
 import rwt.device.texture.Texture;
 import rwt.resource.Reader;
@@ -133,6 +133,7 @@ public class InGameCanvas extends CanvasSTG {
     }
 
     double ptx;
+    int progress;
 
     public void tick() {
 
@@ -145,7 +146,7 @@ public class InGameCanvas extends CanvasSTG {
         r.magicRound.tranAngle(1);
 
         if(!util.isDialogShowing) {
-            if(player.bomb && power >= 20) {
+            if(player.bomb && power >= 20 && player.action.canBomb()) {
                 player.action.callBomb();
                 power -= 20;
             }
@@ -168,10 +169,10 @@ public class InGameCanvas extends CanvasSTG {
         util.dialogTick(player, 5, 30);
 
         if(player.getX() + 1 < ptx) {
-            bgManager.tranX(player.slow ? -0.5 : -1);
+            bgManager.tranX(player.slow ? -0.2 : -0.4);
         }
         if(player.getX() - 1 > ptx) {
-            bgManager.tranX(player.slow ? 0.5 : 1);
+            bgManager.tranX(player.slow ? 0.2 : 0.4);
         }
 
         ptx = player.getX();
