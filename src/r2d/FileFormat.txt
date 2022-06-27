@@ -1,0 +1,14 @@
+rpl.txt:
+HEAD
+00000000...
+
+script.txt:
+command_name1;
+command_name2 = {
+    arg_name1 = arg_value1,
+    arg_name2 = arg_value2
+};
+
+properties.txt:
+key1 = value
+key2 = [keep_space_value]

@@ -1,0 +1,2 @@
+RainyTest是对Rainy2D和Rainy2DX的测试用模块。
+请务必不要使用这里的内容。
